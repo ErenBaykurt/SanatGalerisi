@@ -6,7 +6,6 @@
 }
 
 <div class="container">
-
     <div class="nedir">
         <div class="overlay">
             @foreach (var x in Model)
@@ -14,10 +13,11 @@
                 <p>@x.Aciklama</p>
             }
             <div class="button-container">
-                <button class="translucent-button" style="width: calc(100% - 40px);">Galeriyi Gezmeye Başla!</button>
+                <a class="translucent-button" asp-controller="Home" asp-action="UnityScene" style="width: calc(100% - 40px);">
+                    Galeriyi Gezmeye Başla!
+                </a>
             </div>
         </div>
         <img src="~/lib/images/nedir.jpg" class="nedir">
     </div>
 </div>
-
